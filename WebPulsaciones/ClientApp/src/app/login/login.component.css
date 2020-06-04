@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .fondo{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(#12f70a,#000000);
+    overflow: hidden;
+    font-family: sans-serif; 
+  }
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background-image: linear-gradient(#12f70a,#000);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .login-box button{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1ac04c;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+  ul li{
+    position: absolute;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style:none;
+    opacity: 0;
+    background-image:linear-gradient(rgb(0, 89, 255),#000);
+    float: left;
+  }
+  .cuadro li{
+    top:50vh;
+    left: 45vw;
+    animation: square 10s linear infinite;
+  }
+  .cuadro li:nth-child(1){
+    top:80vh ;
+    left:10vw ;
+    animation-delay: 2s;
+  }
+  .cuadro li:nth-child(2){
+    top:80vh ;
+    left: 10vw;
+    animation-delay: 2s;
+  }
+  .cuadro li:nth-child(3){
+    top: 80vh;
+    left: 85vw;
+    animation-delay: 4s;
+  }
+  .cuadro li:nth-child(4){
+    top: 10vh;
+    left: 70vw;
+    animation-delay: 6s;
+  }  
+  .cuadro li:nth-child(5){
+    top: 10vh;
+    left: 20vw;
+    animation-delay: 8s;
+  }
+  @keyframes square{
+    0%{
+      transform:scale(1) rotateY(0deg);
+      opacity: 1;
+    }
+    100%{
+      transform: scale(5) rotateY(1000deg);
+      opacity: 0;
+    }
+  }
+  .circulo li{
+    bottom: 0;
+    left: 15vw;
+    animation: circle 10s linear infinite;
+  }
+  .circulo li:nth-child(2){
+    left: 35vw;
+    animation-delay: 6s;
+  }
+  .circulo li:nth-child(3){
+    left: 55vw;
+    animation-delay: 4s;
+  }
+  .circulo li:nth-child(4){
+    left: 75vw;
+    animation-delay: 6s;
+  }
+  .circulo li:nth-child(5){
+    left: 90vw;
+    animation-delay: 9s;
+  }
+  .circulo li:nth-child(6){
+    left:82.5vw ;
+    animation-delay: 8s;
+  }
+  .circulo li:nth-child(7){
+    left: 65vw;
+    animation-delay: 2s;
+  }
+  .circulo li:nth-child(8){
+    left: 45vw;
+    animation-delay: 4s;
+  }
+  .circulo li:nth-child(9){
+    left: 25vw;
+    animation-delay: 3s;
+  }  
+  .circulo li:nth-child(10){
+    left: 15vw;
+    animation-delay: 8s;
+  }
+  @keyframes circle{
+    0%{
+      transform: scale(0) rotate(0deg);
+      opacity: 1;
+      bottom: 0;
+      border-radius:0; 
+    }
+    100%{
+      transform: scale(5) rotate(1000deg);
+      opacity: 1;
+      bottom: 90vh;
+      border-radius:50%; 
+    }
+  }
+
+  .alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    margin-bottom: 5px;
+  }
+
+  .container-error-message {
+    padding: 3px;
+  }
